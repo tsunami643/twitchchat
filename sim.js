@@ -1,7 +1,7 @@
 // prototypes
 
 // chatter class
-var Chatter = function(name, colour) {
+var Chatter = function(name, color) {
 
 	// name not given? generate a cool one
 	if(name == undefined) {
@@ -10,11 +10,11 @@ var Chatter = function(name, colour) {
 		this.name = name;
 	}
 
-	// 
-	if(colour == undefined) {
-		this.colour = this.generateColour();
+	//
+	if(color == undefined) {
+		this.color = this.generateColor();
 	} else {
-		this.colour = colour;
+		this.color = color;
 	}
 
 	this.messages = new Array(	"ヽ༼ຈل͜ຈ༽ﾉ raise your dongers ヽ༼ຈل͜ຈ༽ﾉ.",
@@ -37,16 +37,16 @@ var Chatter = function(name, colour) {
 }
 
 Chatter.prototype.generateName = function() {
-	
+
 	// adjective list
 	var adjectives = new Array(	"Cool",
 								"Huge",
 								"Funny",
-								"Japanese",
+								"Cyka",
 								"Amazing",
 								"Tiny",
 								"Stupid",
-								"Cowabunga",
+								"Dank",
 								"Wide",
 								"Incredible"
 								);
@@ -57,7 +57,7 @@ Chatter.prototype.generateName = function() {
 							"Boy",
 							"Barf",
 							"Girl",
-							"MasterChief",
+							"Seeker",
 							"Yoshi",
 							"Samurai",
 							"Beast",
@@ -94,14 +94,14 @@ Chatter.prototype.generateName = function() {
 
 };
 
-Chatter.prototype.generateColour = function() {
+Chatter.prototype.generateColor = function() {
 
-	// var colours = new Array("Red", "Blue", "Green", "Yellow", "Orange", "Brown", "Black", "White", "Fuchsia");
-	var colours = new Array("FF0000", "0000FF", "008000", "B22222", "FF7F50", "FF4500", "2E8B57", "DAA520", "D2691E", "5F9EA0", "1E90FF", "FF69B4", "8A2BE2", "00FF7F");
+	// var colors = new Array("Blue", "Coral", "DodgerBlue", "SpringGreen", "YellowGreen", "Green", "OrangeRed", "Red", "GoldenRod", "HotPink", "CadetBlue", "SeaGreen", "Chocolate", "BlueViolet", "Firebrick");
+	var colors = new Array("0000FF", "FF7F50", "1E90FF", "00FF7F", "9ACD32", "008000", "FF4500", "FF0000", "DAA520", "FF69B4", "5F9EA0", "2E8B57", "D2691E", "8A2BE2", "B22222");
 
-	var colourIndex = Math.floor(Math.random()*colours.length);
+	var colorIndex = Math.floor(Math.random()*colors.length);
 
-	return "#" + colours[colourIndex];
+	return "#" + colors[colorIndex];
 };
 
 Chatter.prototype.speak = function() {
@@ -132,13 +132,13 @@ Chatter.prototype.speak = function() {
 
 	}
 
-	// append the message as a paragraph, including username and name colour
-	var stringToAppend = "<p><span style=\"font-weight:bold; color:" + this.colour + ";\">" + this.name + "</span>: " + chatMessage + "</p>";
+	// append the message as a paragraph, including username and name color
+	var stringToAppend = "<p><span style=\"font-weight:bold; color:" + this.color + ";\">" + this.name + "</span>: " + chatMessage + "</p>";
 	$("#chat").append(stringToAppend);
 
 	// grab chat height and wrapper height
 	var chatHeight = $("#chat").height();
-	
+
 	var firstChildHeight = 0;
 
 	// if chat height is over 3000 pixels, remove the first paragraph inside it
@@ -164,7 +164,7 @@ Chatter.prototype.speak = function() {
 Chatter.prototype.attemptToSpeak = function() {
 
 	var chatDecider = Math.floor(Math.random()*49);
-	
+
 	// let's chat!
 	if(chatDecider == 3) {
 		this.speak();
