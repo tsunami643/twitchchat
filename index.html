@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+	<head>
+
+		<title>Welcome to Twitch Chat Simulator</title>
+		<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+		<meta name="google" value="notranslate">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+		<!--<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-51833326-1', 'twitchchat.com');
+		  ga('send', 'pageview');
+
+		</script>-->
+
+		<style>
+
+			#chatWrapper{
+				width:340px;
+				height:900px;
+				background-color:#d3d3d3;
+				font-family: arial, sans-serif;
+				font-size:12px;
+				position:relative;
+				padding-top:0px;
+				overflow:hidden;
+				margin:0px auto;
+			}
+
+			#chat{
+				width:330px;
+				height:27px;
+				padding:10px;
+				/*background-color:white;*/
+				overflow:hidden;
+				position:absolute;
+			}
+
+			#chat p{
+				line-height:21px;
+			}
+
+			#welcome{
+				color:#666;
+				margin-top:0px;
+			}
+
+			a{
+				color:#6441a5;
+				text-decoration:none;
+			}
+
+			a:hover{
+				text-decoration:underline;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div id="chatWrapper">
+
+			<div id="chat">
+
+				<p id="welcome">Welcome to Twitch Chat Simulator!</p>
+
+			</div>
+
+		</div>
+
+		<script src="sim.js"></script>
+
+	</body>
+
+</html>
