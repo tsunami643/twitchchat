@@ -31,10 +31,9 @@ var Chatter = function(name, color) {
 								"ʜᴇʟʟᴏ, ɪ ᴀᴍ ᴀ ʏᴏᴜɴɢ ʙᴇᴀᴜᴛɪғᴜʟ ᴋᴏʀᴇᴀɴ ɢɪʀʟ (>‿◠)✌ ᴀɴᴅ ɪ ᴡᴏᴜʟᴅ ᴊᴜsᴛ ʟɪᴋᴇ ᴛᴏ ʟᴇᴛ ʏᴏᴜ ᴋɴᴏᴡ ᴛʜᴀᴛ ɪ ᴡᴀᴛᴄʜ ʏᴏᴜ ᴇᴠᴇʀʏ ᴅᴀʏ ᴀɴᴅ ɢɪɢɢʟᴇ ᴛᴏ ᴍʏsᴇʟғ ʙᴇᴄᴀᴜsᴇ ᴏғ ʜᴏᴡ ɢᴏᴏᴅ ʏᴏᴜ ᴀʀᴇ ᴀᴛ ɢᴀᴍᴇs ♡‿‿♡ ɪ ʜᴏᴘᴇ ᴏɴᴇ ᴅᴀʏ ʏᴏᴜ ᴄᴀɴ ᴛᴇᴀᴄʜ ᴍᴇ sᴏᴍᴇᴛʜɪɴɢ ( ͡~ ͜ʖ ͡°)",
 								"Stiv, I hope you can see this message now that the chat has died down. I wanted to say CONGRATS. I know that you can do a little bitter, but I always want to tip my hat to you. Through thick and thin, I will still be here to always support you. I know times are hard, but you always come back with a good attitude. i wish you there very best on your next runs and hope you get an even better score. I will continue to be here to find new strats as always. Great job Stiv, I will be here always",
 								"▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬ ＤＡＭＮ ＴＨＩＳ ＮＥＷ ＳＰＡＭ ＩＳ ＦＡＮＣＹ ▬▬▬▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬▬▬▬",
-								"<a href=\"http://haloruns.com\" target=\"_blank\">haloruns.com</a>"
-								);
+								"L", "W" "VALORANT", "ROBLOX", "Minecraft", "Fall Guys", "Fortnite", "Rocket League", "Counter Strike", "Snake.io", "Geometry Dash", "Subway Surfers"];
+						
 
-}
 
 Chatter.prototype.generateName = function() {
 
